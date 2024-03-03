@@ -103,7 +103,7 @@
             </li>
             <li
               class="bg-[#12132D08] text-[#12132D99] text-2xl rounded-full py-2 border-2 border-[#12132D08]"
-              title="connect"
+              title="Register"
             >
               <i class="fa-solid fa-user-plus"></i>
             </li>
@@ -124,8 +124,11 @@
       </div>
     </header>
     <main>
+      <div id="spinner" class="hidden">
+        <img class="block mx-auto" src="images/spiner.gif" alt="">
+      </div>
       <!-- hero section  -->
-      <section class="max-w-7xl mx-auto my-8">
+      <section class="max-w-7xl mx-auto my-8 p-3">
         <div class="herotext lg:p-20 p-4 bg-black/90 rounded-3xl">
           <div class=""></div>
           <div class="flex lg:flex-row flex-col justify-between gap-8">
@@ -140,12 +143,12 @@
               <label
                 class="input lg:w-10/12 w-full input-bordered flex items-center gap-2"
               >
-                <input
+                <input id="searchinp"
                   type="search"
                   class="grow text-black w-2/5"
                   placeholder="Search"
                 />
-                <button
+                <button onclick="getValue()" id="search-btn"
                   class="badge bg-[#797DFC] hover:bg-[#797DFC] text-white p-4"
                 >
                   search
@@ -172,7 +175,7 @@
         </div>
       </section>
       <!-- let's discus section  -->
-      <section class="max-w-7xl mx-auto my-14">
+      <section class="max-w-7xl mx-auto my-14 p-3">
         <div class="text-center">
           <h1 class="text-4xl font-bold">Let’s Discuss</h1>
           <br />
@@ -183,11 +186,11 @@
           </p>
         </div>
         <!-- post container  -->
-        <div class="my-16 flex lg:flex-row flex-col justify-between gap-16">
+        <div class="my-16  flex lg:flex-row flex-col justify-between gap-16">
           <!-- left  -->
-          <div class="lg:w-1/2 w-full">
+          <div  id="catPost" class="lg:w-2/4 w-full">
             <!-- single caerd  -->
-            <div class="">
+            <!-- <div class="">
               <div class="flex gap-3 bg-[#797DFC1A] lg:p-10 p-2 rounded-lg">
                 <div class="relative">
                   <img
@@ -232,19 +235,26 @@
                   </div>
                 </div>
               </div>
-            </div>
+            </div> -->
           </div>
           <!-- right  -->
-          <div class="lg:w-1/2 p-4 w-full">
-            <div class="flex justify-between ">
+          <div class="lg:w-2/4 p-4 w-full bg-[#12132D0D] rounded-md h-fit">
+            <div id="spinne2r" class="hidden">
+              <img class="block mx-auto" src="images/spiner.gif" alt="">
+            </div>
+            <div class="flex justify-between mb-5">
               <h3 class="text-xl font-bold">title</h3>
-              <h3 class="text-xl font-bold">mark as read <span>( <span>4</span> )</span></h3>
+              <h3 class="text-xl font-bold flex items-center opacity-70"> <img class="space-x-2" src="images/Frame (1).png" alt=""> mark as read (<span id="mark-count">0</span>)</h3>
+              
+            </div>
+            <div id="mark" class="rounded-md">
+
             </div>
           </div>
         </div>
       </section>
       <!-- join our froum  -->
-      <section class="max-w-7xl  mx-auto my-14">
+      <section class="max-w-7xl  mx-auto my-14 p-3">
         <div class=" lg:p-12  p-4 bg-black/90 rounded-3xl">
           <div class=""></div>
           <div class="flex lg:flex-row flex-col-reverse justify-between items-center gap-8 p-4">
@@ -264,7 +274,7 @@
         </div>
       </section>
       <!-- latest post  -->
-      <section class="max-w-7xl mx-auto my-14">
+      <section class="max-w-7xl mx-auto my-14 p-3">
         <div class="text-center">
           <h1 class="text-4xl font-extrabold">Latest Posts</h1>
           <br />
@@ -275,9 +285,9 @@
           </p>
         </div>
         <!-- single post  -->
-        <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 my-6">
+        <div id="latest-container" class="grid grid-cols-1 lg:grid-cols-3 gap-4 my-6">
 
-          <div class="card  bg-base-100 shadow-xl p-6 border-2 border-gray-100">
+          <!-- <div class="card  bg-base-100 shadow-xl p-6 border-2 border-gray-100">
             <figure class="rounded-3xl mb-4"><img  src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="post" /></figure>
             <div class="card-body p-0 space-y-1">
               <h3 class="space-x-2 opacity-70"><i class="fa-regular fa-calendar-days"></i><span>29 january 2024</span></h3>
@@ -291,12 +301,12 @@
                 </div>
               </div>
             </div>
-          </div>
+          </div> -->
       
         </div>
       </section>
     </main>
-    <footer class="bg-gray-300">
+    <footer class="bg-[#12132D0D]">
       <div class="text-center p-12 max-w-7xl mx-auto min-h-96">
         <h1 class="text-4xl font-extrabold">Retro</h1>
         <br />
