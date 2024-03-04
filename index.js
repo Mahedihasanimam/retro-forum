@@ -22,7 +22,7 @@ const categoryPost = async (value) => {
 
     div.innerHTML = `
         <div class="mb-5">
-              <div class="flex gap-3 bg-[#797DFC1A] lg:p-10 p-2 rounded-lg w-full">
+              <div class="flex gap-3 bg-[#F3F3F5] hover:bg-[#797DFC1A] hover:shadow-md hover:transition-all lg:p-10 p-2 rounded-lg w-full">
                 <div class="relative">
                   <img
                     class="border-2 border-gray-200 rounded-full w-20"
@@ -103,11 +103,6 @@ const markAsread = (title, view) => {
 
 const getValue = async () => {
   spin.classList.remove('hidden')
-  // setTimeout(() => {
-  //   return spin.classList.add("hidden");
-  // }, 2000);
-  // spin.classList.remove("hidden");
-
   const searchValue = document.getElementById("searchinp").value;
   if (searchValue === "") {
     return alert("plese provide a valid search");
@@ -127,7 +122,7 @@ const getValue = async () => {
       let div = document.createElement("div");
       div.innerHTML += `
       <div class="mb-5">
-            <div class="flex gap-3 bg-[#797DFC1A] lg:p-10 p-2 rounded-lg w-full">
+            <div class="flex gap-3 bg-[#F3F3F5] hover:bg-[#797DFC1A] hover:shadow-md hover:transition-all lg:p-10 p-2 rounded-lg w-full">
               <div class="relative">
                 <img
                   class="border-2 border-gray-200 rounded-full w-20"
