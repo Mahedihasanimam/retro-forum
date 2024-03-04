@@ -124,9 +124,7 @@
       </div>
     </header>
     <main>
-      <div id="spinner" class="hidden">
-        <img class="block mx-auto" src="images/spiner.gif" alt="">
-      </div>
+     
       <!-- hero section  -->
       <section class="max-w-7xl mx-auto my-8 p-3">
         <div class="herotext lg:p-20 p-4 bg-black/90 rounded-3xl">
@@ -175,7 +173,7 @@
         </div>
       </section>
       <!-- let's discus section  -->
-      <section class="max-w-7xl mx-auto my-14 p-3">
+      <section id="discus" class="max-w-7xl mx-auto my-14 p-3">
         <div class="text-center">
           <h1 class="text-4xl font-bold">Let’s Discuss</h1>
           <br />
@@ -185,10 +183,12 @@
             integrated testing features allow for a streamlined .
           </p>
         </div>
+        
         <!-- post container  -->
         <div class="my-16  flex lg:flex-row flex-col justify-between gap-16">
           <!-- left  -->
           <div  id="catPost" class="lg:w-2/4 w-full">
+            
             <!-- single caerd  -->
             <!-- <div class="">
               <div class="flex gap-3 bg-[#797DFC1A] lg:p-10 p-2 rounded-lg">
@@ -237,11 +237,10 @@
               </div>
             </div> -->
           </div>
+          <span id="spinner" class="loading loading-bars loading-lg hidden"></span>
           <!-- right  -->
           <div class="lg:w-2/4 p-4 w-full bg-[#12132D0D] rounded-md h-fit">
-            <div id="spinne2r" class="hidden">
-              <img class="block mx-auto" src="images/spiner.gif" alt="">
-            </div>
+            
             <div class="flex justify-between mb-5">
               <h3 class="text-xl font-bold">title</h3>
               <h3 class="text-xl font-bold flex items-center opacity-70"> <img class="space-x-2" src="images/Frame (1).png" alt=""> mark as read (<span id="mark-count">0</span>)</h3>
@@ -282,9 +281,11 @@
             Yes, you can run unit tests and view the results directly within the
             app. The <br />
             integrated testing features allow for a streamlined .
-          </p>
+          </p><br>
+          <span id="spinner" class="loading loading-bars loading-lg hidden"></span>
         </div>
         <!-- single post  -->
+          
         <div id="latest-container" class="grid grid-cols-1 lg:grid-cols-3 gap-4 my-8">
 
           <!-- <div class="card  bg-base-100 shadow-xl p-6 border-2 border-gray-100">
